@@ -51,6 +51,7 @@ function Header({ placeholder }) {
         className=" relative h-10 my-auto flex items-center  cursor-pointer  "
       >
         <Image
+          alt=""
           src="https://links.papareact.com/qd3"
           objectFit="contain"
           objectPosition="left"

@@ -14,7 +14,7 @@ function Footer() {
         <p>Pooyan</p>
         <p>presents</p>
         <p>Investors</p>
-        <p>let's go </p>
+        <p>lets go </p>
         <p> Join now</p>
       </div>
       <div className="space-y-4 text-xs text-gray-800">

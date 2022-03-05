@@ -8,4 +8,5 @@ module.exports = {
     extend: {},
   },
   plugins: [require("tailwind-scrollbar-hide")],
+  enabled: process.env.NODE_ENV === "production",
 };

@@ -5,6 +5,7 @@ function LargeCard({ img, title, description, buttonText }) {
     <section className="relative py-16">
       <div className="relative h-96 min-w-[300px]">
         <Image
+          alt=""
           className="rounded-2xl"
           src={img}
           layout="fill"
