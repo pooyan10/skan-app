@@ -11,6 +11,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { useState } from "react";
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
+import { motion } from "framer-motion";
 
 function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
@@ -42,11 +43,23 @@ function Header({ placeholder }) {
       },
     });
   };
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
 
   return (
     <header className="grid grid-cols-3  sticky top-0 z-50 bg-white bg-opacity-80 bg-clip-padding blur-backdrop-filter shadow-md p-5 md:px-10">
       {/* left */}
-      <div
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        transition={{
+          type: "keyframes",
+          stiffness: 260,
+          damping: 20,
+        }}
         onClick={() => router.push("/")}
         className=" relative h-10 my-auto flex items-center  cursor-pointer  "
       >
@@ -57,7 +70,7 @@ function Header({ placeholder }) {
           objectPosition="left"
           layout="fill"
         />
-      </div>
+      </motion.div>
 
       {/* center */}
       <div className="flex items-center shadow-sm md:border-2 rounded-full hover:shadow-md ">
