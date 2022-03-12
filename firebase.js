@@ -1,3 +1,5 @@
+import firebase from "firebase/app";
+
 const firebaseConfig = {
   apiKey: "AIzaSyBIu6HmryLOMnbLmEaOffvNjEqTPiyCZbs",
   authDomain: "skan-app.firebaseapp.com",
@@ -6,3 +8,7 @@ const firebaseConfig = {
   messagingSenderId: "90983634475",
   appId: "1:90983634475:web:171b9b7616a4bca1d3bc6e",
 };
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
