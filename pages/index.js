@@ -8,7 +8,7 @@ import SmallCard from "../Components/SmallCard";
 
 export default function Home({ exploreData, cardsData }) {
   return (
-    <div className="">
+    <div className="relative">
       <Head>
         <title>Skan</title>
       </Head>

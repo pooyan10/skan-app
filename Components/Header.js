@@ -93,9 +93,9 @@ function Header({ placeholder }) {
           Become a host
         </p>
         <GlobeAltIcon className="h-10 cursor-pointer hover:bg-gray-100 p-2 rounded-full" />
-        <div className="flex border-2 cursor-pointer rounded-full space-x-2 p-2 hover:shadow-md transition duration-300 transform ease-out">
-          <MenuIcon className="h-6 " />
-          <UserCircleIcon className="h-6 " />
+        <div className="relative flex border-2 cursor-pointer rounded-full space-x-2 p-2 hover:shadow-md transition duration-300 transform ease-out">
+          <MenuIcon className="h-6" />
+          <UserCircleIcon className="h-6" />
         </div>
       </div>
       <div className="flex-initial w-23 col-span-3  justify-center">
